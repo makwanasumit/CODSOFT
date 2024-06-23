@@ -17,11 +17,13 @@ html,body{
 }
 
 nav{
-    z-index: 100;
+    position: fixed;
+    z-index: 1000;
     height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgba(255, 250, 250,.8);
 }
 
 .nav-img{
@@ -58,8 +60,6 @@ nav{
     display: flex;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    border-bottom: 1px solid white
 }
 
 .circle1{
@@ -73,12 +73,11 @@ nav{
 }
 
 .circle2{
-    overflow: hidden;
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    align-self: flex-end;
+    align-self: center;
     filter: blur(30px);
     animation: two 10s infinite;
 }
@@ -179,7 +178,7 @@ nav{
 
 .home{
     position: relative;
-    height: 91vh;
+    height: 100vh;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -232,12 +231,82 @@ nav{
   /* ---------------------------------------------skill----------------------------- */
 
 
-
 .skill{
-    height: 100vh;
+    z-index: 100;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f4e4;
+}
+
+.bg2{
+    z-index: -1;
+    position: absolute;
+    opacity: .3;
+}
+
+.bg2 .circle1bg1{
+    background-color: red;
 }
 
 
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 100%;
+}
+
+.skill-head{
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.skills img{
+    height: 100px;
+    border: 2px solid white;
+    padding: 5px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+
+.my-skill{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.my-skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100%;
+}
+
+.my-skill p{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 8px;
+    text-align: justify;
+}
 
   
   /* ---------------------------------------------skill----------------------------- */
