@@ -11,8 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/trial1/style2.css">
+    <link rel="stylesheet" href="/trial1/global.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
 
-    
+
+
 
 </head>
 <body>
@@ -24,19 +30,19 @@
         <div class="circle5 opacity-50 bg-blur orange-pink"></div>
         <div class="circle6 opacity-50 bg-blur orange"></div>
     </div>
-    <div class="main">
+    <section id="main">
         <nav>
             <div class="nav-img">
                 <img src="/trial1/images/file.png" alt="">
             </div>
             <div class="nav-img nav-items">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skill</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a class="nav-anchor">Home</a></li>
+                    <li><a class="nav-anchor">About</a></li>
+                    <li><a class="nav-anchor">Skill</a></li>
+                    <li><a class="nav-anchor">Projects</a></li>
+                    <li><a class="nav-anchor">Resume</a></li>
+                    <li><a class="nav-anchor">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -91,17 +97,58 @@
                     <b>Tailwind CSS:</b> Skilled at using Tailwind CSS to create bespoke, responsive designs using utility-first CSS classes, allowing for quick UI development.
                 </p>
                 <p>
-                    <b>SQL:b</b> Capable of designing and optimizing SQL queries to manage and manipulate relational databases, assuring data integrity and efficient retrieval.
+                    <b>SQL:</b> Capable of designing and optimizing SQL queries to manage and manipulate relational databases, assuring data integrity and efficient retrieval.
                 </p>
             </div>
             </div>
         </div>
-        <div class="project">box3</div>
+
+
+        <!-- project -->
+        
+        
+        <div class="project">
+            <div class="project-header"><h1>MY PROJECTS</h1></div>
+            <div class="project-container">
+                <div class="git-repo1">
+                    <div class="repo-head">
+                        <div class="repo-head-left"><a href="https://github.com/makwanasumit/CODSOFT">CODSOFT</a></div>
+                        <div class="repo-head-right">Public</div>
+                    </div>
+                    <div class="repo-description">codsoft Intern tasks</div>
+                    <div class="repo-lang">
+                        <div id="purpleround"></div>
+                        <div class="">CSS</div>
+                    </div>      
+                </div>
+                <div class="git-repo1">
+                    <div class="repo-head">
+                        <div class="repo-head-left"><a href="https://github.com/makwanasumit/LifeDrop">LifeDrop</a></div>
+                        <div class="repo-head-right">Public</div>
+                    </div>
+                    <div class="repo-description">Blood donation site</div>
+                    <div class="repo-lang">
+                        <div style=" margin-right: 5px; height:15px; width: 15px; background-color: #3d7c72; border-radius: 9999px;"></div>
+                        <div class="">PHP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div class="resume">box4</div>
         <div class="contact">box5</div>
         <div class="footer">box6</div>
-    </div>
+    </section>
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/trial1/script2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
