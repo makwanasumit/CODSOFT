@@ -37,16 +37,15 @@
             </div>
             <div class="nav-img nav-items">
                 <ul>
-                    <li><a class="nav-anchor">Home</a></li>
-                    <li><a class="nav-anchor">About</a></li>
-                    <li><a class="nav-anchor">Skill</a></li>
+                    <li><a class="nav-anchor" target="home">Home</a></li>
+                    <li><a class="nav-anchor" target="skill">Skill</a></li>
                     <li><a class="nav-anchor">Projects</a></li>
                     <li><a class="nav-anchor">Resume</a></li>
                     <li><a class="nav-anchor">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="home">
+        <div class="home" name="home">
             <div class="main-intro">
                 <div class="discription">
                     Hi,
@@ -63,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="skill">
+        <div class="skill" name="skill">
             <div class="bg2">
                 <img src="/trial1/images/skillbgimg.png" alt="">
             </div>
@@ -108,39 +107,82 @@
         
         
         <div class="project">
-            <div class="project-header"><h1>MY PROJECTS</h1></div>
             <div class="project-container">
-                <div class="git-repo1">
-                    <div class="repo-head">
-                        <div class="repo-head-left"><a href="https://github.com/makwanasumit/CODSOFT">CODSOFT</a></div>
-                        <div class="repo-head-right">Public</div>
+                <div class="project-header"><h1>MY PROJECTS</h1></div>
+                <div class="git-repos">
+                    <div class="git-repo1">
+                        <div class="repo-head">
+                            <div class="repo-head-left"><a href="https://github.com/makwanasumit/CODSOFT">CODSOFT</a></div>
+                            <div class="repo-head-right">Public</div>
+                        </div>
+                        <div class="repo-description">codsoft Intern tasks</div>
+                        <div class="repo-lang">
+                            <div id="purpleround"></div>
+                            <div class="">CSS</div>
+                        </div>      
                     </div>
-                    <div class="repo-description">codsoft Intern tasks</div>
-                    <div class="repo-lang">
-                        <div id="purpleround"></div>
-                        <div class="">CSS</div>
-                    </div>      
-                </div>
-                <div class="git-repo1">
-                    <div class="repo-head">
-                        <div class="repo-head-left"><a href="https://github.com/makwanasumit/LifeDrop">LifeDrop</a></div>
-                        <div class="repo-head-right">Public</div>
-                    </div>
-                    <div class="repo-description">Blood donation site</div>
-                    <div class="repo-lang">
-                        <div style=" margin-right: 5px; height:15px; width: 15px; background-color: #3d7c72; border-radius: 9999px;"></div>
-                        <div class="">PHP</div>
+                    <div class="git-repo1">
+                        <div class="repo-head">
+                            <div class="repo-head-left"><a href="https://github.com/makwanasumit/LifeDrop">LifeDrop</a></div>
+                            <div class="repo-head-right">Public</div>
+                        </div>
+                        <div class="repo-description">Blood donation site</div>
+                        <div class="repo-lang">
+                            <div style=" margin-right: 5px; height:15px; width: 15px; background-color: #3d7c72; border-radius: 9999px;"></div>
+                            <div class="">PHP</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+<!-- resume -->
 
 
+        <div class="resume">
+            <div class="resume-container">
+                <div class="resume-description">
+                    <h1 class="f-50">What creative project is on your mind?</h1>
+                    <p>Do you find yourself with a blank canvas waiting to be filled with innovation and creativity? Is there a project that lingers in the recesses of your mind, seeking expression and realization? Look no further, for the time has come to turn your vision into a tangible reality.</p>
+                </div>
+                <div>
+                    <button><a href="/trial1/pdf/Sumit's Resume emailing.pdf" target="_blank">My resume</a></button>
+                    <button><a href="">Hire me</a></button>
+                </div>
+            </div>
+        </div>
 
-        <div class="resume">box4</div>
-        <div class="contact">box5</div>
-        <div class="footer">box6</div>
+
+<!-- contact -->
+
+        <div class="contact">
+            <div class="contact-container">
+                <div class="contact-container__sub">
+                    <h2>SAY HELLO</h2>
+                    <form>
+                        <div class="input-group">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                &copy;Sumit Makwana
+            </div>
+        </footer>
     </section>
 
 
