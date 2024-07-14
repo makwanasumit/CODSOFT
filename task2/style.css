@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(/64c15cd5a90fafad1f6e45c1_darkergrotesque-medium-webfont.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Nunito;
+}
+
+body{
+    overflow-x: hidden;
+    background: #182127;
+}
+
+.span{
+    height: 15vh;
+}
+
+#div{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+}
+
+.backgrounds{
+    position: absolute;
+    display: flex;
+    height: 330vh;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#bg1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#bg2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+#bg1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(71, 71, 71, 1), rgba(71, 71, 71, 0));
+}
+
+#bg2 img{
+    mask-image:linear-gradient(to top, rgba(71, 71, 71, 1), rgba(71, 71, 71, 0));;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items:center;
+    padding: 0 50px;
+    background-color: #f1f1f1d9;
+    z-index: 11;
+}
+
+.navbar h1{
+    color: #474747
+}
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+
+.navbar ul li{
+    padding: 20px;
+    
+}
+
+.navbar ul li a{
+    font-family: Nunito;
+    color: #474747;
+    text-decoration: none;
+}
+
+.main_content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.main_content .heading{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    align-items: center;
+    gap: 5px;
+}
+
+.main_content .heading h1{
+    position: relative;
+    font-size: 10rem;
+    color: #474747;
+    overflow: hidden;
+}
+
+.main_content .heading h1 span{
+    font-family: Nunito;
+    display: inline-block;
+}
+
+.main_content .sub_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 40%;
+    padding:0 50px;
+}
+
+.subcontainer{
+    height: 80%;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    color: rgba(218, 218, 218, 0.75);
+}
+.subcontainer h4{
+    font-size: 17px;
+}
+
+.subcontainer p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.destination{
+    height: 100vh;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.destination h1{
+    height: 10vh;
+    color:rgba(245, 245, 245, 0.714);
+    font-size: 3rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    width: 85vw;
+}
+
+.card .card_container{
+    height:60vh;
+    width: 20vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+}
+
+.card .card_container h4{
+    position: relative;
+    z-index: 11;
+    color: rgba(255, 255, 255);
+    padding: 10px;
+}
+
+.card .card_container p{
+    color: white;
+    font-size:10px;
+}
+
+.card .card_container img{
+    z-index: -1;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(71, 71, 71, 1), rgba(71, 71, 71, 0));
+}
+
+.footer{
+    padding: 0 50px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer h1{
+    padding-top: 50px;
+    width: 40%;
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.video{
+    width: 100%;
+    margin: 40px 0 0 0;
+    height: 35vh;
+}
+
+.video video{
+    height: 35vh;
+    width: 30vw;
+}
+
+
+
+footer {
+    height: 65px;
+    background-color: #182127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
